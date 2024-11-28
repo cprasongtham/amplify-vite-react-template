@@ -12,3 +12,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <App />
   </React.StrictMode>
 );
+
+const client = generateClient<Schema>()
+
+client.queries.sayHello({
+  name: "Amplify",
+})
